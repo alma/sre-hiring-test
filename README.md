@@ -50,6 +50,7 @@ Bien que nécessaire pour être production-ready, il n'est pas nécessaire de tr
   Il peut également être exécuté avec le paramètre `prod` pour exécuter le serveur en production:
 
   ```bash
+  $ ./scripts/entrypoint.sh prod
   Checking for script in /app/prestart.sh
   There is no script /app/prestart.sh
   {"loglevel": "info", "workers": 4, ...
