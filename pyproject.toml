@@ -17,9 +17,13 @@ known_first_party = 'app'
 known_third_party = [
     "aiofiles",
     "fastapi",
-    "pytest",
-    "requests",
-    "starlette"
+    "google",
+    "gunicorn",
+    "httpx",
+    "img2pdf",
+    "PIL",
+    "sentry",
+    "uvicorn",
 ]
 line_length = 110
 multi_line_output = 3
@@ -28,15 +32,3 @@ use_parentheses = true
 combine_as_imports = true
 
 sections = 'FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER'
-
-[tool.pytest.ini_options]
-addopts = "--failed-first --tb=short --verbosity=2 --cov=app --cov-report=term-missing"
-filterwarnings = [
-    "ignore:.*is deprecated.*:DeprecationWarning",
-    "ignore:.*using non-Enum.*:DeprecationWarning",
-    "ignore::UserWarning",
-]
-
-[tool.coverage.run]
-# Do not create coverage for test files, as they are always 100%
-omit = ["tests/**"]
