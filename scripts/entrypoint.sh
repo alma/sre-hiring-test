@@ -11,9 +11,15 @@ done
 
 if [ "$mode" = "prod" ]
 then
-    # Run the start script, it will check for an /app/prestart.sh script (e.g. for migrations)
-    # And then will start Gunicorn with Uvicorn
-    source /start.sh
+	WORKER_CLASS="uvicorn.workers.UvicornWorker"
+	APP_MODULE="app.main"
+	GUNICORN_CONF="config/gunicorn.py"
+	VARIABLE_NAME="app"
+
+    exec gunicorn \
+    	--worker-class="$WORKER_CLASS" \
+    	--config="$GUNICORN_CONF" \
+    	"${APP_MODULE}:${VARIABLE_NAME}"
 
 elif [ "$mode" = "dev" ]
 then
