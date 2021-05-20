@@ -2,9 +2,16 @@
 
 ## Objectif
 
-L'objectif de ce test est d'évaluer ta capacité à provisionner à l'aide de code les ressources GCP nécessaires au fonctionnement d'une simple application.
+L'objectif de ce test est d'évaluer ta capacité à provisionner à
+l'aide de code les ressources GCP nécessaires au fonctionnement d'une
+simple application.
 
-Il s'agit d'une application permettant de convertir une image en fichier PDF. Le code est en Python. L'application offre une interface HTTP pour la conversion. L'application convertit une image dont l'URL est fournie en entrée en un fichier PDF, stocke le résultat dans un bucket Cloud Storage et enfin renvoie une URL permettant à l'utilisateur de télécharger le PDF sur un appel HTTP de type GET.
+Il s'agit d'une application permettant de convertir une image en
+fichier PDF. Le code est en Python. L'application offre une interface
+HTTP pour la conversion. L'application convertit une image dont l'URL
+est fournie en entrée en un fichier PDF, stocke le résultat dans un
+bucket Cloud Storage et enfin renvoie une URL permettant à
+l'utilisateur de télécharger le PDF sur un appel HTTP de type GET.
 
 Voici deux commandes illustrant l'usage de cette application:
 
@@ -22,11 +29,20 @@ $ curl "https://storage.googleapis.com/image2pdf-files/5b42006d-c733-493d-9032-a
 ...
 ```
 
-Le choix du service GCP (App Engine, Cloud Run, Function, ...) et de l'outil d'Infra As Code t'es libre. Afin d'exprimer au mieux tes compétences, nous te recommandons d'utiliser des techniques que tu maitrises.
+Le choix du service GCP (App Engine, Cloud Run, Function, ...) et de
+l'outil d'Infra As Code t'es libre. Afin d'exprimer au mieux tes
+compétences, nous te recommandons d'utiliser des techniques que tu
+maitrises. Afin de mieux comprendre ta démarche tu pourras justifier
+de tes choix dans la documentation associée.
 
 ## Livrables
 
-Nous avons besoin a minima de l'URL sur lequel faire l'appel POST et de l'URL du repository GitHub privé contenant ton code. Merci de donner l'accès en administration à Thierry (GitHub id: ThierryAbalea). Ce dernier ajoutera par la suite les membres de l'équipe chargés de revoir ton code.
+Nous avons besoin a minima de l'URL sur lequel faire l'appel POST et
+de l'URL du repository GitHub privé contenant ton code. Merci de
+donner l'accès en administration à Thierry (GitHub id:
+ThierryAbalea). Ce dernier ajoutera par la suite les membres de
+l'équipe chargés de revoir ton code.
+
 
 ## Hors scope
 
