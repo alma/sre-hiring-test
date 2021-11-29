@@ -39,8 +39,8 @@ de tes choix dans la documentation associée.
 
 Nous avons besoin a minima de l'URL sur lequel faire l'appel POST et
 de l'URL du repository GitHub privé contenant ton code. Merci de
-donner l'accès en administration à Thierry (GitHub id:
-ThierryAbalea). Ce dernier ajoutera par la suite les membres de
+donner l'accès en administration à Rodolphe Quiédeville (GitHub id:
+[rodo](https://github.com/rodo)). Ce dernier ajoutera par la suite les membres de
 l'équipe chargés de revoir ton code.
 
 
