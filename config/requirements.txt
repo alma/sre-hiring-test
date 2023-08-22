@@ -1,0 +1,15 @@
+# FastAPI & friends
+aiofiles>=23.2.1
+fastapi>=0.101.1
+gunicorn>=21.2.0
+pydantic-settings>=2.0.3
+uvicorn>=0.23.2
+sentry-sdk==1.29.2
+
+# Google stuff
+google-cloud-storage==2.10.0
+
+
+img2pdf==0.4.4
+httpx==0.24.1
+Pillow==10.0.0

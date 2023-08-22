@@ -1,0 +1,34 @@
+[tool.black]
+line-length = 110
+skip-numeric-underscore-normalization = true
+target-version = ['py37']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | static
+)/
+'''
+
+[tool.isort]
+force_grid_wrap = 0
+include_trailing_comma = true
+known_first_party = 'app'
+known_third_party = [
+    "aiofiles",
+    "fastapi",
+    "google",
+    "gunicorn",
+    "httpx",
+    "img2pdf",
+    "PIL",
+    "sentry",
+    "uvicorn",
+]
+line_length = 110
+multi_line_output = 3
+skip_glob = ''
+use_parentheses = true
+combine_as_imports = true
+
+sections = 'FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER'
